@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<meta name="author" content="FDZWEBSLLC">
+	<title>RAFAEL FRANCO-DIAZ PORTFOLIO | HOME</title>
+	
+	<style>
+	   
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		
+		body{
+		
+			background-color: rgba(250,250,250, 1);
+		
+		}
+		
+		header{
+			
+			 background-color: rgba(50, 50, 50, 0.7);
+			
+			width: 100%;
+			height: 50px;
+			display: flex;
+			padding-top: 2%;
+			
+			/*filter: blur(8px);
+			-webkit-filter: blur(8px);*/
+		}
+		
+		
+		.logo-wrapper{
+			
+			margin-left: 10%;
+			
+		}
+		
+		.logo-link{
+			text-decoration: none;
+			
+		}
+		
+		
+		.logo{
+		
+			width: 40px;
+			height: 40px;
+			border-radius: 8px;
+			
+		}
+		
+		.logo:hover{
+			
+			opacity: 50%;
+		}
+		
+		.space1{
+		
+			
+			margin-left: 60%; 
+		
+		}
+		
+		nav{
+			
+			display: flex;
+			width: 30%; 
+			padding-top: 1%;
+			height: 50px;
+			
+		}
+		
+		nav a {
+			display: block;
+			background-color: green;
+			padding: 2%;
+			text-decoration: none;
+			color: white;
+			padding: 1% 2%;
+			
+			border-radius: 4px;
+			height: 20px;
+			width: 50px;
+			
+			text-transform: uppercase;
+			
+		}
+		
+		nav a:hover{
+		
+			background-color: darkgreen;
+			color: white;
+		}
+		
+		nav a:nth-child(2){
+			
+			margin: 0 4%;
+		
+		}
+		
+		.showcase{
+		
+			width: 100%;
+			min-height: 400px;
+			height: 95vh;
+			background-image: url(darkwallpaper.jpeg);
+			background-size: 100% 100%;
+			
+			
+		
+		}
+		
+		main{
+			margin: 5% 0 0 0;
+			padding: 5% 0 5% 0;
+
+			
+		}
+		
+		h1{
+			
+			width: 40%;
+			font-size: 3em;
+			text-align: center;
+			color: white;
+			
+			
+			padding-top: 20%;
+			margin-left: 60%;
+		}
+		
+		.links{
+			
+			text-align: center;
+			font-size: 1.6em;
+			color: white;
+			background-color: blue;
+			padding: 5% 0;
+			
+		}
+		
+		h2{
+		
+			width: 100%;
+			font-size: 3em;
+			text-align: center;
+			color: white;
+			
+		}
+		
+		
+		button{
+			width: 20%;
+			padding: 1%;
+			background-color: green;
+			color: white;
+			border: 8px;
+			margin: 1% 40%;
+			font-size: 1.2em;
+			text-align: center;
+			
+		}
+		
+		/**********project-wrapper**********/
+		.project-wrapper{
+			width: 100%;
+			display: flex;
+			margin: 5% 0;
+			padding: 5% 0 0 0;
+			
+		}
+		
+		.project-wrapper:nth-child(even){
+		
+			background-color: rgba(0,0,0, 0.1);
+			margin: 5% 0 0 0;
+			padding: 10% 0 10% 0;
+			
+			
+		}
+		
+		.project-wrapper:nth-child(2){
+		
+			
+		}
+		
+		/*.project-wrapper:last-child{
+		
+			margin-bottom: 0;
+			padding: 10% 0 0 0;
+			
+		}*/
+		
+		
+		.section-space{
+		
+			width: 10%;
+			
+		}
+		
+		/********* Card *******/
+		
+		a{
+		
+			text-decoration: none;
+		}
+		
+		.card-link{
+		
+			text-decoraction: none;
+			
+			
+		}
+		
+		.card-link:active{
+		
+			text-decoration: none;
+		}
+		
+		.card-link:visited{
+			text-decoraction: none;
+		}
+		
+		.card{
+			width: 400px;
+			margin: 0 0 0 30%;
+			background-color: brown;
+			color: white;
+			border-radius: 8px;
+			text-decoration: none;
+			box-shadow: 0;
+			 transition: box-shadow 0.5s, opacity 0.5s, background-color 0.5s;
+		}
+		
+		.card:hover{
+		
+			
+  			box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			background-color: green;
+			opacity: 90%;
+  			
+		}
+		
+		
+		
+		.card-picture{
+			width: 100%;
+			height: 300px;
+			border-radius:8px 8px 0 0;
+		}
+		
+		.card-title{
+			font-size: 1.4em;
+			text-align: center;
+			padding: 5% 0;
+			text-decoration: none;
+			
+		}
+		
+		.card-caption{
+			font-size: 0.9em;
+			text-align: center;
+			
+			padding-bottom: 10%;
+			
+			
+		}
+		
+		/**********article *******/
+		.article{
+			
+			margin: 5% 5% 0 15%;
+			width: 30%;
+		
+		}
+		
+		.article-title{
+		
+			font-size: 2em;
+			font-weight: bold;
+			font-family: Impact;
+			margin-bottom: 2%;
+			text-align: center;
+			
+		}
+		
+		.article-caption{
+		
+			font-size: 1.4em;
+			line-height: 1.5;
+			
+			
+			
+		}
+		
+		.article-link{
+		
+			text-decoration: none;
+			color: gray;
+			font-size: 1.4em;
+		}
+		
+		.article-link:hover{
+		
+			
+			color: orange;
+			text-decoration: underline;
+
+		}
+		
+		/***** footer ****/
+		
+		footer{
+			background-color: rgba(0,0,0, 0.5);
+			padding: 2% 0;
+			
+		}
+		
+		footer p{
+			width: 25%;
+			margin-left: 75%;
+		}
+		
+		footer p a{
+		
+			text-decoration: none;
+			color: rgba(0,0,0, 0.5);
+			
+		}
+		footer p a:hover{
+			color: orange;
+			text-decoration: underline;
+			
+			
+		}
+		
+		
+	</style>
+</head>
+<body>
+
+	
+	
+	<div class="showcase">
+		
+		<header>
+		
+				<div class="logo-wrapper">
+					<a class="logo-link" href="portfolio.html" ><img class="logo" src="logo.jpeg" alt="Logo"></a>
+				</div>
+				<div class="space1"></div>
+				<nav>
+					<a class="nav-links current" href="porfolio.html">home</a>
+					<a class="nav-links" href="#">links</a>
+					<a class="nav-links" href="#">about</a>
+				</nav>
+			
+		</header>	
+	
+	
+		<h1>Porfolio</h1>
+
+	</div>
+	
+	
+	<main>
+		
+		<section class="project-wrapper">
+			<a class="card-link" href="https://iglesiacasadeayuda.org">
+				<div class="card">
+					<img class="card-picture"src="casadeayuda_thumbnail.jpeg" alt="Card Picture">
+					<h3 class="card-title">Casa De Ayuda</h3>
+					<p class="card-caption">iglesiacasadeayuda.org</p>
+			
+				</div>
+			</a>
+			
+			<div class="section-space"></div>
+			
+			<div class="article">
+				<h3 class="article-title">Project ##</h3>
+				<p class="article-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<a class="article-link" href="#">Go to site</a>
+			
+			</div>
+		</section>
+		
+		<section class="project-wrapper">
+			<a class="card-link" href="https://www.gclasspro.com/">
+				<div class="card">
+					<img class="card-picture"src="gclass-thumbnail.jpeg" alt="Card Picture">
+					<h3 class="card-title">Pikachu</h3>
+					<p class="card-caption">Pika pika!! XD </p>
+			
+				</div>
+			</a>
+			
+			<div class="section-space"></div>
+			
+			<div class="article">
+				<h3 class="article-title">Project ##</h3>
+				<p class="article-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<a class="article-link" href="#">Go to site</a>
+			
+			</div>
+		</section>
+		
+		<section class="project-wrapper" >
+			<a class="card-link" href="https://www.dfrancohairsalon.com">
+				<div class="card">
+					<img class="card-picture"src="dfrancohairsalon-thumbnail.jpeg" alt="Card Picture">
+					<h3 class="card-title">Pikachu</h3>
+					<p class="card-caption">Pika pika!! XD </p>
+			
+				</div>
+			</a>
+			
+			<div class="section-space"></div>
+			
+			<div class="article">
+				<h3 class="article-title">Project ##</h3>
+				<p class="article-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<a class="article-link" href="#">Go to site</a>
+			
+			</div>
+		</section>
+		
+		<section class="project-wrapper" style="padding-bottom: 5%;">
+			<a class="card-link" href="https://rfrancodiaz93.github.io/gueritotaxi/index.html">
+				<div class="card">
+					<img class="card-picture"src="guerito-thumbnail.jpeg" alt="Card Picture">
+					<h3 class="card-title">Pikachu</h3>
+					<p class="card-caption">Pika pika!! XD </p>
+			
+				</div>
+			</a>
+			
+			<div class="section-space" ></div>
+			
+			<div class="article" >
+				<h3 class="article-title">Project ##</h3>
+				<p class="article-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<a class="article-link" href="#">Go to site</a>
+			
+			</div>
+		</section>
+		
+		<section class="project-wrapper" style="padding-bottom: 5%;">
+			<a class="card-link" href="https://rfrancodiaz93.github.io/todo/">
+				<div class="card">
+					<img class="card-picture"src="todo_thumbnail.jpeg" alt="Card Picture">
+					<h3 class="card-title">Todo</h3>
+					<p class="card-caption">Create a list of items you need </p>
+			
+				</div>
+			</a>
+			
+			<div class="section-space" ></div>
+			
+			<div class="article" >
+				<h3 class="article-title">Todo List</h3>
+				<p class="article-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<a class="article-link" href="#">Go to site</a>
+			
+			</div>
+		</section>
+		
+		<section class="project-wrapper" style="padding-bottom: 5%;">
+			<a class="card-link" href="https://rfrancodiaz93.github.io/multistepform/">
+				<div class="card">
+					<img class="card-picture"src="multistepform-thumbnail.jpeg" alt="Card Picture">
+					<h3 class="card-title">Multi-Step Form</h3>
+					<p class="card-caption">Form with many steps </p>
+			
+				</div>
+			</a>
+			
+			<div class="section-space" ></div>
+			
+			<div class="article" >
+				<h3 class="article-title">Todo List</h3>
+				<p class="article-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<a class="article-link" href="#">Go to site</a>
+			
+			</div>
+		</section>
+		
+		
+		<section class="project-wrapper" style="padding-bottom: 5%;">
+			<a class="card-link" href="https://rfrancodiaz93.github.io/surveyform/">
+				<div class="card">
+					<img class="card-picture"src="surveyform-thumbnail.jpeg" alt="Card Picture">
+					<h3 class="card-title">Survey Form</h3>
+					<p class="card-caption">Form  </p>
+			
+				</div>
+			</a>
+			
+			<div class="section-space" ></div>
+			
+			<div class="article" >
+				<h3 class="article-title">Survey Form</h3>
+				<p class="article-caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<a class="article-link" href="#">Go to site</a>
+			
+			</div>
+		</section>
+		
+	</main>
+	
+	
+	
+	<footer>
+		
+		<p>Copryright &copy; <a href="https://www.fdzwebsllc.com">FDZWEBSLLC</a></p>
+	
+	</footer>
+
+	<!-- 
+		<div class="link1 links">Project</div>
+			<button onclick="change()">change</button> 
+	-->
+	<script>
+	
+		var link1 = document.getElementsByClassName("links")[0];
+		
+		link.innerHTML = "001";
+		
+		document.getElementsByClassName("links")[0].innerHTML = "001";
+		
+		function change(){
+
+			document.getElementsByClassName("links")[0].innerHTML = "001";
+		}
+	
+	</script>
+</body>
+</html>
